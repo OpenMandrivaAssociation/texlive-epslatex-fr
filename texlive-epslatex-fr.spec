@@ -1,3 +1,9 @@
+# revision 19440
+# category Package
+# catalog-ctan /info/epslatex/french
+# catalog-date 2007-02-08 01:16:19 +0100
+# catalog-license gpl
+# catalog-version undef
 Name:		texlive-epslatex-fr
 Version:	20070208
 Release:	1
@@ -79,6 +85,7 @@ to use imported graphics in LaTeX(2e) documents.
 %doc %{_texmfdistdir}/doc/latex/epslatex-fr/wide.eps
 %doc %{_texmfdistdir}/doc/latex/epslatex-fr/widecenter.sty
 %doc %{_texmfdistdir}/doc/latex/epslatex-fr/xb.sty
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -89,3 +96,5 @@ to use imported graphics in LaTeX(2e) documents.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
