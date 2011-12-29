@@ -16,8 +16,6 @@ Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/epslatex-fr.doc.t
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 This is the French translation of epslatex, and describes how
@@ -85,7 +83,6 @@ to use imported graphics in LaTeX(2e) documents.
 %doc %{_texmfdistdir}/doc/latex/epslatex-fr/wide.eps
 %doc %{_texmfdistdir}/doc/latex/epslatex-fr/widecenter.sty
 %doc %{_texmfdistdir}/doc/latex/epslatex-fr/xb.sty
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -96,5 +93,3 @@ to use imported graphics in LaTeX(2e) documents.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
