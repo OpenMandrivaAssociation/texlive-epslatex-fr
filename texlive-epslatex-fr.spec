@@ -5,7 +5,7 @@
 # catalog-license gpl
 # catalog-version undef
 Name:		texlive-epslatex-fr
-Version:	20170414
+Version:	20180303
 Release:	1
 Summary:	French version of "graphics in LaTeX"
 Group:		Publishing
