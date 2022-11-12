@@ -1,18 +1,12 @@
-# revision 19440
-# category Package
-# catalog-ctan /info/epslatex/french
-# catalog-date 2007-02-08 01:16:19 +0100
-# catalog-license gpl
-# catalog-version undef
 Name:		texlive-epslatex-fr
-Version:	20190228
+Version:	19440
 Release:	1
 Summary:	French version of "graphics in LaTeX"
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/epslatex/french
 License:	GPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/epslatex-fr.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/epslatex-fr.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/epslatex-fr.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/epslatex-fr.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -86,24 +80,10 @@ to use imported graphics in LaTeX(2e) documents.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20070208-2
-+ Revision: 751532
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20070208-1
-+ Revision: 718351
-- texlive-epslatex-fr
-- texlive-epslatex-fr
-- texlive-epslatex-fr
-- texlive-epslatex-fr
-
