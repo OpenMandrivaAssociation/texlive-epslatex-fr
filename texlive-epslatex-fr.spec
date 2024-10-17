@@ -3,7 +3,7 @@ Version:	19440
 Release:	2
 Summary:	French version of "graphics in LaTeX"
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/info/epslatex/french
+URL:		https://www.ctan.org/tex-archive/info/epslatex/french
 License:	GPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/epslatex-fr.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/epslatex-fr.doc.r%{version}.tar.xz
